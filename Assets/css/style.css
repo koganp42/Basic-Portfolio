@@ -10,23 +10,24 @@ header {
     border: 1px solid #cccccc;
     height: 100px;
     display: flex;
-    justify-content: center;
     align-items: center;
-
+    justify-content: space-between;
 }
 
 h1, h2, h3 {
     background-color: #4aaaa5;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
+    text-align: left;
 }
 
 h1 {
-    text-align: left;
+    justify-content: start;
 }
 
 .navbar {
     list-style-type: none;
-    float: right;
+    display: flex;
+    justify-content: end;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -46,3 +47,33 @@ footer {
     max-width: 70%;
     text-align: center;
 }
+
+#koganPic {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+label {
+    float: left;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
