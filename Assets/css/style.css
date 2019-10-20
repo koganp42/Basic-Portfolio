@@ -2,19 +2,16 @@ body {
     font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     background-color: #ffffff;
     border: #dddddd;
-    /*max-width: 960px;*/
-    text-align: center;
-    background-image: url(/Assets/images/interlaced.png);
     max-width: 960px;
+    text-align: center;
 }
 header {
-    background: #ffffff;
+    background-color: #ffffff;
     border: 1px solid #cccccc;
     height: 100px;
-    display: inline-block;
+    display: inline-flexbox;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
 }
 
 h1, h2, h3 {
@@ -24,22 +21,17 @@ h1, h2, h3 {
 }
 
 h1 {
-    color: white;
-    width: 20%;
-    justify-content: center;
-    float: left;
+    justify-content: start;
 }
 
 .navbar {
     list-style-type: none;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     margin: 0;
     padding: 0;
     overflow: hidden;
     align-content: space-between;
-    float: left;
-    margin-left: 70%;
 }
 
 p {
@@ -76,10 +68,6 @@ input[type=text], textarea {
     margin-bottom: 16px;
     resize: vertical;
   }
-
-textarea {
-    height: 150px;
-}
   
 input[type=submit] {
     background-color: #4aaaa5;
