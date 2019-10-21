@@ -1,56 +1,78 @@
 body {
     font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    background-color: #ffffff;
-    border: #dddddd;
-    max-width: 960px;
-    text-align: center;
+    background-image: url("/Basic_Portfolio/Assets/images/interlaced.png");
+    
 }
+
+/* .contentArea {
+    width: 960px;
+    justify-content: center;
+    background-color: white;
+} */
 header {
     background-color: #ffffff;
-    border: 1px solid #cccccc;
+    border-bottom: 2px solid #cccccc;
     height: 100px;
-    display: inline-flexbox;
-    align-items: center;
-    justify-content: space-between;
+    width: 100%;
+    /* display: flex; */
+    /*align-items: center;
+    justify-content: space-between;*/
+    flex-direction: row;
 }
 
 h1, h2, h3 {
-    background-color: #4aaaa5;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
     text-align: left;
+    width: 200px;
 }
 
 h1 {
-    justify-content: start;
+    background-color: #4aaaa5;
+    width: 200px;
+    margin-top: 60px;
+    margin-bottom: 0px;
+    float: left;
+    color: white;
+}
+
+h2, h3 {
+    color: #4aaaa5;
 }
 
 .navbar {
     list-style-type: none;
     display: flex;
-    justify-content: end;
-    margin: 0;
-    padding: 0;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
     overflow: hidden;
-    align-content: space-between;
+    float: right;
 }
 
-p {
+.navList {
+    width: 100px;
+}
+
+/* p {
     color: #777777;
     overflow: auto;
+} */
+
+section {
+    width: 960px;
+    justify-content: center;
+    background-color: white;
+    height: 80%;
+    margin-top: 20px;
 }
 
 footer {
     background-color: #666666;
 }
 
-.container {
-    max-width: 70%;
-    text-align: center;
-}
-
 #koganPic {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     float: left;
 }
 
@@ -76,4 +98,28 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    float: left;
   }
+
+.portfolio {
+    list-style-type: none;
+    /* display: flex; */
+    justify-content: space-around;
+}
+
+.projects {
+    position: relative;
+}
+
+.projectPic {
+    height: 150px;
+    width: 150px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.textblock {
+    position: absolute;
+    background-color: #4aaaa5;
+    text-align: center;
+}
