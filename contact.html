@@ -9,9 +9,8 @@
 
 <body>
 
-    <div class="contentArea">
-
-        <header>
+    <header>
+        <div class="headerDiv">
             <h1>Kogan Pack</h1>
             <nav>
                 <ul class="navbar">
@@ -19,26 +18,31 @@
                     <li class="navList"><a id="contactLink" href="contact.html">Contact Me</a></li>
                     <li class="navList"><a id="portfolioLink" href="portfolio.html">My Projects</a></li>
                 </ul>
-                </nav>
-        </header>
-        
-        <h3>Contact</h3>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="contentArea">
+        <div class= "innerContent">
 
-        <div id="contactForm">
-            <form>
+            <h2>Contact</h2>
 
-                <label for="name">Name and Company</label>
-                <input id="contactName" type="text" name="name" placeholder="Bill G. at Microsoft">
+            <div id="contactForm">
+                <form>
 
-                <label for="email">Your Email</label>
-                <input id="contactEmail" type="text" name="email" placeholder="billy.g@outlook.com">
+                    <label for="name">Name and Company</label>
+                    <input id="contactName" type="text" name="name" placeholder="Bill G. at Microsoft">
 
-                <label for="message">Message</label>
-                <textarea id="message" name="message"></textarea>
-                
-                <input type="submit" value="Submit" id="submitButton">
+                    <label for="email">Your Email</label>
+                    <input id="contactEmail" type="text" name="email" placeholder="billy.g@outlook.com">
 
-            </form>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"></textarea>
+                    
+                    <input type="submit" value="Submit" id="submitButton">
+
+                </form>
+            </div>
         </div>
     </div>
     
