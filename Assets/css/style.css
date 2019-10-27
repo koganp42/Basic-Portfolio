@@ -22,7 +22,7 @@ a {
 
 body {
     font-family: 'Aerial','Helvetica Neue', Helvetica, sans-serif;
-    background-image: url("/Basic_Portfolio/Assets/images/interlaced.png");
+    background-image: url("../images/interlaced.png");
 }
 
 .contentArea {
@@ -30,7 +30,7 @@ body {
     margin: 0 auto;
     background-color: white;
     padding-bottom: 20px;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 header {
